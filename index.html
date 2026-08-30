@@ -10,71 +10,68 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
         
-        .hero-slide {
-            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+        .screenshot-slide {
+            transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased selection:bg-black selection:text-white">
 
-    <!-- Hero Section with Background Slider -->
-    <header class="relative text-white text-center py-20 md:py-28 px-4 overflow-hidden min-h-[640px] flex items-center justify-center">
-        <!-- Background Slider Container -->
-        <div id="slider-container" class="absolute inset-0 z-0">
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-100" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-1.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-2.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-3.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-4.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-5.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-6.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-7.png');"></div>
-            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-8.png');"></div>
-            <!-- Vignette & Dark Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+    <!-- Hero Section (Clean Minimalist Apple Style) -->
+    <header class="text-center pt-20 pb-12 px-4 max-w-4xl mx-auto">
+        <img src="WanaGo%20Travel%20Wallpaper%20New%20Tab-Logo.png" alt="WanaGo Logo" class="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 rounded-2xl shadow-xl border border-gray-100 object-contain">
+        
+        <div class="mb-5">
+            <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 text-amber-900 px-4 py-1.5 rounded-full font-medium text-xs md:text-sm border border-amber-200 transition duration-200 shadow-sm">
+                <span>🏆 #1 Product of the Day on Saas Hunt!</span>
+                <span class="text-xs opacity-75">↗</span>
+            </a>
         </div>
 
-        <!-- Slider Arrow Controls -->
-        <button id="prevBtn" aria-label="Previous image" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-lg">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-        </button>
-        <button id="nextBtn" aria-label="Next image" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-lg">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-        </button>
-
-        <!-- Slider Indicators -->
-        <div id="indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
-
-        <!-- Hero Content (Apple Glassmorphism Card) -->
-        <div class="relative z-10 max-w-3xl mx-auto w-full">
-            <div class="bg-black/45 backdrop-blur-xl border border-white/15 rounded-3xl p-8 md:p-12 shadow-2xl">
-                
-                <img src="WanaGo%20Travel%20Wallpaper%20New%20Tab-Logo.png" alt="WanaGo Logo" class="w-20 h-20 mx-auto mb-6 rounded-2xl shadow-xl border border-white/10 object-contain">
-                
-                <div class="mb-5">
-                    <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 backdrop-blur-md text-amber-300 px-4 py-1.5 rounded-full font-medium text-xs md:text-sm border border-white/20 transition duration-200 shadow-sm">
-                        <span>🏆 #1 Product of the Day on Saas Hunt!</span>
-                        <span class="text-xs opacity-75">↗</span>
-                    </a>
-                </div>
-
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight text-white drop-shadow-sm">WanaGo New Tab</h1>
-                
-                <p class="text-base md:text-lg text-gray-200 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-                    Transform your new tab into a beautifully designed travel inspiration dashboard. Fuel your workday with stunning daily Full HD travel wallpapers, scenic backgrounds, and aesthetic nature landscapes from around the world.
-                </p>
-                
-                <div class="flex justify-center gap-4 flex-wrap mb-4">
-                    <a href="#" class="bg-white text-gray-950 hover:bg-gray-100 font-semibold py-3 px-7 rounded-full transition shadow-lg hover:scale-105 transform duration-150 text-sm md:text-base">Get it for Chrome</a>
-                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-7 rounded-full transition shadow-lg hover:scale-105 transform duration-150 text-sm md:text-base">Get it for Edge</a>
-                </div>
-                
-                <p class="text-xs md:text-sm text-gray-300 font-medium">✨ 100% Free Features</p>
-            </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight text-gray-950">WanaGo New Tab</h1>
+        
+        <p class="text-base md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+            Transform your new tab into a beautifully designed travel inspiration dashboard. Fuel your workday with stunning daily Full HD travel wallpapers, scenic backgrounds, and aesthetic nature landscapes from around the world.
+        </p>
+        
+        <div class="flex justify-center gap-4 flex-wrap mb-4">
+            <a href="#" class="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-lg hover:scale-105 transform duration-150 text-sm md:text-base">Get it for Chrome</a>
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition shadow-lg hover:scale-105 transform duration-150 text-sm md:text-base">Get it for Edge</a>
         </div>
+        
+        <p class="text-xs md:text-sm text-gray-500 font-medium">✨ 100% Free Features</p>
     </header>
 
+    <!-- Screenshot Showcase Slider (Placed Before Features, 16:9 Aspect Ratio) -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <div class="relative group bg-gray-900 rounded-2xl md:rounded-3xl p-2 md:p-3.5 shadow-2xl border border-gray-200/80">
+            <!-- 16:9 Aspect Ratio Box with Clean Rounded Corners -->
+            <div class="relative w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden bg-gray-950">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-100" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-1.png" alt="WanaGo Preview 1">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-2.png" alt="WanaGo Preview 2">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-3.png" alt="WanaGo Preview 3">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-4.png" alt="WanaGo Preview 4">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-5.png" alt="WanaGo Preview 5">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-6.png" alt="WanaGo Preview 6">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-7.png" alt="WanaGo Preview 7">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" src="Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-8.png" alt="WanaGo Preview 8">
+            </div>
+
+            <!-- Left & Right Arrow Buttons -->
+            <button id="prevBtn" aria-label="Previous screenshot" class="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="nextBtn" aria-label="Next screenshot" class="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Dots Indicator -->
+            <div id="indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section class="py-20 px-6 max-w-7xl mx-auto">
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-gray-200">
         <h2 class="text-3xl font-bold text-center mb-12 tracking-tight">Features</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
@@ -136,7 +133,7 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="bg-white py-16 px-6 border-t border-gray-100">
+    <section class="bg-white py-16 px-6 border-t border-gray-200">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-2xl font-semibold mb-6 tracking-tight text-gray-900">Get inspired, boost your productivity, and start planning your next dream vacation today!</h3>
             <a href="#" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md hover:scale-105 transform duration-150">Download WanaGo Now</a>
@@ -182,20 +179,20 @@
         <p>&copy; 2026 WanaGo New Tab. All rights reserved.</p>
     </footer>
 
-    <!-- Slider Script -->
+    <!-- Screenshot Slider Script -->
     <script>
-        const slides = document.querySelectorAll('.hero-slide');
+        const slides = document.querySelectorAll('.screenshot-slide');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const indicatorsContainer = document.getElementById('indicators');
         let currentIndex = 0;
         let slideInterval;
 
-        // Create indicator dots
+        // Build dots
         slides.forEach((_, idx) => {
             const dot = document.createElement('button');
             dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
-            dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40'}`;
+            dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40 hover:bg-white/60'}`;
             dot.addEventListener('click', () => {
                 goToSlide(idx);
                 resetTimer();
@@ -255,7 +252,7 @@
             resetTimer();
         });
 
-        // Start auto-sliding every 5 seconds
+        // Auto-play every 5s
         slideInterval = setInterval(nextSlide, 5000);
     </script>
 
