@@ -9,32 +9,64 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
-        .bg-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('Screenshot 2026-08-10 223407.png') no-repeat center center;
-            background-size: cover;
+        
+        .hero-slide {
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased">
+<body class="bg-gray-50 text-gray-900 antialiased selection:bg-black selection:text-white">
 
-    <!-- Hero Section -->
-    <header class="bg-hero text-white text-center py-24 px-6">
-        <img src="WanaGo-Logo-500px.png" alt="WanaGo Logo" class="w-24 h-24 mx-auto mb-6 rounded-2xl shadow-2xl">
-        <div class="mb-6 inline-block">
-            <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white px-5 py-2 rounded-full font-medium text-sm border border-white/30 shadow-sm transition duration-200">
-                <span>🏆 #1 Product of the Day on Saas Hunt!</span>
-                <span class="text-xs opacity-75">↗</span>
-            </a>
+    <!-- Hero Section with Background Slider -->
+    <header class="relative text-white text-center py-28 px-6 overflow-hidden min-h-[580px] flex items-center justify-center">
+        <!-- Background Slider Container -->
+        <div id="slider-container" class="absolute inset-0 z-0">
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-100" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-1.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-2.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-3.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-4.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-5.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-6.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-7.png');"></div>
+            <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0" style="background-image: url('Screenshot-WanaGo%20Travel%20Wallpaper%20New%20Tab-8.png');"></div>
+            <!-- Dark Overlay for Apple-like Glass Contrast -->
+            <div class="absolute inset-0 bg-black/45 backdrop-blur-[1.5px]"></div>
         </div>
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">WanaGo New Tab</h1>
-        <p class="text-lg md:text-xl max-w-4xl mx-auto mb-10 text-gray-100 leading-relaxed font-light tracking-wide">
-            Transform your new tab into a beautifully designed travel inspiration dashboard. Fuel your workday with stunning daily Full HD travel wallpapers, high-resolution scenic backgrounds, and aesthetic nature landscapes from around the world. Perfect for wanderlust lovers, remote workers, and anyone seeking a clean, inspiring, and productive new tab experience.
-        </p>
-        <div class="flex justify-center gap-4 flex-wrap mb-4">
-            <a href="#" class="bg-white text-black hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition shadow-lg">Get it for Chrome</a>
-            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition shadow-lg">Get it for Edge</a>
+
+        <!-- Slider Arrow Controls -->
+        <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/15 hover:bg-white/30 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+
+        <!-- Slider Indicators -->
+        <div id="indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+            <img src="WanaGo%20Travel%20Wallpaper%20New%20Tab-Logo.png" alt="WanaGo Logo" class="w-20 h-20 md:w-24 md:h-24 mb-6 rounded-2xl shadow-2xl drop-shadow-lg object-contain">
+            
+            <div class="mb-6 inline-block">
+                <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white px-5 py-2 rounded-full font-medium text-sm border border-white/30 shadow-sm transition duration-200">
+                    <span>🏆 #1 Product of the Day on Saas Hunt!</span>
+                    <span class="text-xs opacity-75">↗</span>
+                </a>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white drop-shadow-md">WanaGo New Tab</h1>
+            <p class="text-lg md:text-xl max-w-3xl mb-8 text-gray-100 leading-relaxed font-light tracking-wide drop-shadow-sm">
+                Transform your new tab into a beautifully designed travel inspiration dashboard. Fuel your workday with stunning daily Full HD travel wallpapers, high-resolution scenic backgrounds, and aesthetic nature landscapes from around the world. Perfect for wanderlust lovers, remote workers, and anyone seeking a clean, inspiring, and productive new tab experience.
+            </p>
+            
+            <div class="flex justify-center gap-4 flex-wrap mb-4">
+                <a href="#" class="bg-white text-black hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition shadow-lg hover:scale-105 transform duration-150">Get it for Chrome</a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition shadow-lg hover:scale-105 transform duration-150">Get it for Edge</a>
+            </div>
+            
+            <p class="text-sm text-gray-200 font-medium mt-3">✨ 100% Free Features</p>
         </div>
-        <p class="text-sm text-gray-300 font-medium mt-4">✨ 100% Free Features</p>
     </header>
 
     <!-- Features Section -->
@@ -103,7 +135,7 @@
     <section class="bg-white py-16 px-6 border-t border-gray-100">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-2xl font-semibold mb-6 tracking-tight text-gray-900">Get inspired, boost your productivity, and start planning your next dream vacation today!</h3>
-            <a href="#" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md">Download WanaGo Now</a>
+            <a href="#" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md hover:scale-105 transform duration-150">Download WanaGo Now</a>
         </div>
     </section>
 
@@ -145,6 +177,82 @@
     <footer class="bg-white text-gray-400 py-10 text-center text-sm border-t border-gray-100">
         <p>&copy; 2026 WanaGo New Tab. All rights reserved.</p>
     </footer>
+
+    <!-- Slider Script -->
+    <script>
+        const slides = document.querySelectorAll('.hero-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicatorsContainer = document.getElementById('indicators');
+        let currentIndex = 0;
+        let slideInterval;
+
+        // Create indicator dots
+        slides.forEach((_, idx) => {
+            const dot = document.createElement('button');
+            dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40'}`;
+            dot.addEventListener('click', () => {
+                goToSlide(idx);
+                resetTimer();
+            });
+            indicatorsContainer.appendChild(dot);
+        });
+
+        const dots = indicatorsContainer.querySelectorAll('button');
+
+        function updateSlider() {
+            slides.forEach((slide, idx) => {
+                if (idx === currentIndex) {
+                    slide.classList.remove('opacity-0');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0');
+                }
+            });
+
+            dots.forEach((dot, idx) => {
+                if (idx === currentIndex) {
+                    dot.className = 'w-6 h-2.5 rounded-full bg-white transition-all duration-300';
+                } else {
+                    dot.className = 'w-2.5 h-2.5 rounded-full bg-white/40 transition-all duration-300 hover:bg-white/60';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        function resetTimer() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetTimer();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetTimer();
+        });
+
+        // Start auto-sliding every 5 seconds
+        slideInterval = setInterval(nextSlide, 5000);
+    </script>
 
 </body>
 </html>
