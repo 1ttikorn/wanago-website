@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,8 +61,8 @@
             Transform your new tab into a beautifully designed travel inspiration dashboard. Fuel your workday with stunning daily Full HD travel wallpapers, scenic backgrounds, and aesthetic nature landscapes from around the world.
         </p>
         
-        <!-- Action Buttons with Authentic Browser Icons -->
-        <div class="flex items-center justify-center gap-3.5 flex-wrap mb-5">
+        <!-- Action Buttons with Authentic Browser Icons (Added ID here) -->
+        <div id="download-section" class="flex items-center justify-center gap-3.5 flex-wrap mb-5 scroll-mt-10">
             <!-- Chrome -->
             <a href="https://chromewebstore.google.com/detail/bgaeojjcodgaioepdilnejpegpehfgcg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#1d1d1f] hover:bg-black text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Chrome Logo" class="w-5 h-5 shrink-0">
@@ -181,7 +181,8 @@
     <section class="bg-white py-16 px-6 border-t border-gray-200">
         <div class="max-w-4xl mx-auto text-center">
             <h3 class="text-2xl font-normal mb-8 tracking-tight text-gray-700 leading-relaxed">Get inspired, boost your productivity, and start planning your next dream vacation today!</h3>
-            <a href="https://chromewebstore.google.com/detail/bgaeojjcodgaioepdilnejpegpehfgcg" target="_blank" rel="noopener noreferrer" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md hover:scale-105 transform duration-150">Get WanaGo New Tab</a>
+            <!-- Updated href to target #download-section -->
+            <a href="#download-section" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md hover:scale-105 transform duration-150">Get WanaGo New Tab</a>
         </div>
     </section>
 
