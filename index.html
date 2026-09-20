@@ -10,11 +10,18 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://wanagonewtab.com/">
 
+    <!-- โลโก้คือ LCP element ของหน้านี้ จึงสั่งโหลดตั้งแต่อ่าน head -->
+    <link rel="preload" as="image" href="WanaGo%20Travel%20Wallpaper%20New%20Tab-Logo.webp" fetchpriority="high">
+
     <!-- Fonts: preconnect first, then a normal stylesheet link.
          @import inside <style> blocks rendering and loads later than this. -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.vectorlogo.zone" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -65,7 +72,7 @@
 
         <!-- Logo -->
         <div class="mb-7">
-            <img src="WanaGo%20Travel%20Wallpaper%20New%20Tab-Logo.webp" alt="WanaGo Logo" width="112" height="112" class="w-24 h-24 md:w-28 md:h-28 object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-105">
+            <img src="WanaGo%20Travel%20Wallpaper%20New%20Tab-Logo.webp" alt="WanaGo Logo" width="112" height="112" fetchpriority="high" decoding="async" class="w-24 h-24 md:w-28 md:h-28 object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-105">
         </div>
 
         <!-- Product of the Day Badge -->
@@ -90,19 +97,19 @@
         <div id="download-section" class="flex items-center justify-center gap-3.5 flex-wrap mb-5 scroll-mt-10">
             <!-- Chrome -->
             <a href="https://chromewebstore.google.com/detail/bgaeojjcodgaioepdilnejpegpehfgcg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#1d1d1f] hover:bg-black text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Chrome Logo" width="20" height="20" class="w-5 h-5 shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
                 <span>Get it for Chrome</span>
             </a>
 
             <!-- Edge -->
             <a href="https://microsoftedge.microsoft.com/addons/detail/kgidbfmjmkjcoilafhfdpgggjioiaamo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#0078d4] hover:bg-[#006cc1] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,120,212,0.3)] hover:shadow-[0_6px_20px_rgba(0,120,212,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
-                <img src="https://www.vectorlogo.zone/logos/microsoft_edge/microsoft_edge-icon.svg" alt="Edge Logo" width="20" height="20" class="w-5 h-5 shrink-0">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_edge/microsoft_edge-icon.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
                 <span>Get it for Edge</span>
             </a>
 
             <!-- Firefox -->
             <a href="https://addons.mozilla.org/firefox/addon/wanago-new-tab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#c2410c] hover:bg-[#9a3412] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(234,88,12,0.3)] hover:shadow-[0_6px_20px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" alt="Firefox Logo" width="20" height="20" class="w-5 h-5 shrink-0">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
                 <span>Get it for Firefox</span>
             </a>
         </div>
