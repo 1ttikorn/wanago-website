@@ -69,7 +69,7 @@
         <div class="mb-6">
             <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 bg-white/80 hover:bg-white text-gray-800 px-4 py-1.5 rounded-full font-medium text-xs md:text-sm border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] backdrop-blur-md transition-all duration-200 hover:shadow-md">
                 <span>🏆 #1 Product of the Day on SaaSHunt!</span>
-                <span class="text-gray-400 group-hover:text-gray-700 transition-colors">↗</span>
+                <span class="text-gray-600 group-hover:text-gray-900 transition-colors">↗</span>
             </a>
         </div>
 
@@ -98,13 +98,13 @@
             </a>
 
             <!-- Firefox -->
-            <a href="https://addons.mozilla.org/firefox/addon/wanago-new-tab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#ea580c] hover:bg-[#c2410c] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(234,88,12,0.3)] hover:shadow-[0_6px_20px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+            <a href="https://addons.mozilla.org/firefox/addon/wanago-new-tab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#c2410c] hover:bg-[#9a3412] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(234,88,12,0.3)] hover:shadow-[0_6px_20px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" alt="Firefox Logo" width="20" height="20" class="w-5 h-5 shrink-0">
                 <span>Get it for Firefox</span>
             </a>
         </div>
 
-        <p class="text-xs text-gray-400 font-medium tracking-wide">✨ 100% Free Features</p>
+        <p class="text-xs text-gray-600 font-medium tracking-wide">✨ 100% Free Features</p>
     </header>
 
     <!-- Screenshot Showcase Slider (Placed Before Features, 16:9 Aspect Ratio) -->
@@ -125,15 +125,15 @@
             </div>
 
             <!-- Left & Right Arrow Buttons -->
-            <button id="prevBtn" aria-label="Previous screenshot" class="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+            <button id="prevBtn" type="button" aria-label="Previous screenshot" class="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
             </button>
-            <button id="nextBtn" aria-label="Next screenshot" class="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+            <button id="nextBtn" type="button" aria-label="Next screenshot" class="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </button>
 
             <!-- Dots Indicator -->
-            <div id="indicators" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+            <div id="indicators" class="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 flex items-center"></div>
         </div>
     </section>
 
@@ -244,7 +244,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-400 py-10 text-center text-sm border-t border-gray-100">
+    <footer class="bg-white text-gray-600 py-10 text-center text-sm border-t border-gray-100">
         <p>&copy; 2026 WanaGo New Tab. All rights reserved.</p>
     </footer>
 
@@ -258,10 +258,18 @@
         let slideInterval;
 
         // Build dots
+        // พื้นที่แตะต้องกว้างอย่างน้อย 44px ตามเกณฑ์ accessibility
+        // จึงทำปุ่มโปร่งใส 44x44 แล้ววาดจุดจริงเป็น <span> ข้างใน หน้าตาเหมือนเดิม
         slides.forEach((_, idx) => {
             const dot = document.createElement('button');
+            dot.type = 'button';
             dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
-            dot.className = `w-2.5 h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40 hover:bg-white/60'}`;
+            dot.className = 'w-11 h-11 flex items-center justify-center shrink-0';
+
+            const mark = document.createElement('span');
+            mark.className = `block h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40 w-2.5'}`;
+            dot.appendChild(mark);
+
             dot.addEventListener('click', () => {
                 goToSlide(idx);
                 resetTimer();
@@ -269,7 +277,7 @@
             indicatorsContainer.appendChild(dot);
         });
 
-        const dots = indicatorsContainer.querySelectorAll('button');
+        const dots = indicatorsContainer.querySelectorAll('button span');
 
         // โหลดรูปตอนจะใช้จริง แทนที่จะโหลดทั้ง 10 รูปพร้อมกันตอนเปิดหน้า
         function loadSlide(idx) {
@@ -296,10 +304,11 @@
 
             dots.forEach((dot, idx) => {
                 if (idx === currentIndex) {
-                    dot.className = 'w-6 h-2.5 rounded-full bg-white transition-all duration-300';
+                    dot.className = 'block w-6 h-2.5 rounded-full bg-white transition-all duration-300';
                 } else {
-                    dot.className = 'w-2.5 h-2.5 rounded-full bg-white/40 transition-all duration-300 hover:bg-white/60';
+                    dot.className = 'block w-2.5 h-2.5 rounded-full bg-white/40 transition-all duration-300';
                 }
+                dot.parentElement.setAttribute('aria-current', idx === currentIndex ? 'true' : 'false');
             });
         }
 
