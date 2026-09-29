@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanaGo | 旅遊桌布新分頁 &amp; 機票飯店搜尋</title>
+    <link rel="icon" type="image/png" href="/WanaGo-icon.png">
+    <meta name="description" content="把新分頁換成 1,000+ 張來自 50 個國家和地區的 HD 旅遊桌布，支援 52 種語言，免費搜尋機票與飯店，還有待辦清單和書籤。">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.wanagonewtab.com/zh-tw/">
+    <link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/">
+    <link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/">
+    <link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/">
+    <link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/">
+    <link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/">
+    <link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/">
+    <link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/">
+    <link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/">
+    <link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/">
+    <link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/">
+    <link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/">
+    <link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/">
+    <link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/">
+    <link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/">
+
+    <!-- โลโก้คือ LCP element ของหน้านี้ จึงสั่งโหลดตั้งแต่อ่าน head -->
+    <link rel="preload" as="image" href="/WanaGo-Travel-Wallpaper-NewTab-Logo.webp" fetchpriority="high">
+
+    <!-- Fonts: preconnect first, then a normal stylesheet link.
+         @import inside <style> blocks rendering and loads later than this. -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.vectorlogo.zone" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wanagonewtab.com/zh-tw/">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="id_ID">
+    <meta property="og:locale:alternate" content="vi_VN">
+    <meta property="og:locale:alternate" content="th_TH">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:title" content="WanaGo | 旅遊桌布新分頁 &amp; 機票飯店搜尋">
+    <meta property="og:description" content="把新分頁換成 1,000+ 張來自 50 個國家和地區的 HD 旅遊桌布，支援 52 種語言，還能即時搜尋機票與飯店。">
+    <meta property="og:image" content="https://www.wanagonewtab.com/wanago-travel-wallpaper-mount-fuji-preview.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WanaGo | 旅遊桌布新分頁 &amp; 機票飯店搜尋">
+    <meta name="twitter:description" content="把新分頁換成 1,000+ 張來自 50 個國家和地區的 HD 旅遊桌布，支援 52 種語言，還能即時搜尋機票與飯店。">
+    <meta name="twitter:image" content="https://www.wanagonewtab.com/wanago-travel-wallpaper-mount-fuji-preview.webp">
+
+    <!-- Structured data: lets Google show category and price in search results -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "WanaGo | Travel Wallpaper New Tab",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Chrome, Microsoft Edge, Firefox",
+  "url": "https://www.wanagonewtab.com/zh-tw/",
+  "image": "https://www.wanagonewtab.com/wanago-travel-wallpaper-mount-fuji-preview.webp",
+  "description": "把新分頁換成 1,000 多張來自 50 個國家和地區的 HD 旅遊桌布，支援 52 種語言。即時搜尋機票與飯店，還有待辦清單、書籤和世界時鐘。",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Ittikorn Longtee"
+  },
+  "inLanguage": "zh-Hant"
+}
+    </script>
+
+    <!-- FAQ schema: Google อาจแสดงคำถามคำตอบใต้ผลค้นหา ทำให้กินพื้นที่มากขึ้น -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "WanaGo 是免費的嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的。所有功能都免費 — 不用註冊帳號、沒有試用期，也沒有付費方案。當有人透過合作夥伴小工具預訂機票或飯店時，WanaGo 會獲得少許佣金，旅客不需支付任何額外費用。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo 會收集我的資料嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不會。你的書籤、設定和待辦清單都儲存在你自己的裝置上，絕不外傳。WanaGo 只要求 storage 權限，不含任何分析或追蹤程式碼。為了在首次安裝時推薦附近的目的地，WanaGo 只會在你的裝置上讀取瀏覽器的時區和語言 — 不會傳送到任何地方。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo 支援哪些語言？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WanaGo 提供 52 種語言，會自動跟隨瀏覽器語言，也可隨時在設定中切換。搜尋目的地時，除了英文，也能用泰文、日文、韓文、中文、阿拉伯文、印地文等另外 22 種語言輸入地名。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "桌布照片從哪裡來？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "全部 1,000 多張照片皆來自 Unsplash 與 Pixabay，並採用允許免費使用的授權。每張桌布都會在新分頁角落標註攝影師，並附上原圖連結。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo 可以在 Edge 和 Firefox 上使用嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。WanaGo 已在 Chrome Web Store、Microsoft Edge Add-ons 和 Firefox Add-ons 上架，三個平台的功能完全相同。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "可以選擇要看哪些國家和類別嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以。在設定側邊欄中，可依類別（城市、文化、自然）、洲別或特定國家和地區篩選，也可以只輪播你收藏的目的地。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "透過預訂連結需要額外付費嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不需要。連結會以一般公開價格開啟 Expedia 或 Trip.com。若你完成預訂，我們可能會從旅遊網站獲得少許佣金，但絕不影響你支付的金額。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "如何解除安裝 WanaGo？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "在瀏覽器工具列的 WanaGo 圖示上按右鍵，選擇移除；或開啟瀏覽器的擴充功能頁面，找到 WanaGo 後選擇移除。新分頁會立即恢復為預設畫面。"
+      }
+    }
+  ]
+}
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased selection:bg-black selection:text-white">
+
+    <!-- ลิงก์ข้ามไปเนื้อหาหลัก: มองไม่เห็นด้วยตา แต่ผู้ใช้คีย์บอร์ดกด Tab แล้วจะเจอเป็นอันดับแรก -->
+    <a href="#main" class="sr-only focus:not-sr-only">跳到主要內容</a>
+
+    <!-- Hero Section (Refined Apple Aesthetic) -->
+    <header class="text-center pt-24 pb-16 px-6 max-w-4xl mx-auto flex flex-col items-center">
+
+        <!-- Logo -->
+        <div class="mb-7">
+            <img src="/WanaGo-Travel-Wallpaper-NewTab-Logo.webp" alt="WanaGo 標誌" width="112" height="112" fetchpriority="high" decoding="async" class="w-24 h-24 md:w-28 md:h-28 object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Product of the Day Badge -->
+        <div class="mb-6">
+            <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 bg-white/80 hover:bg-white text-gray-800 px-4 py-1.5 rounded-full font-medium text-xs md:text-sm border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] backdrop-blur-md transition-all duration-200 hover:shadow-md">
+                <span>🏆 榮登 SaaSHunt 本日最佳產品第 1 名！</span>
+                <span class="text-gray-600 group-hover:text-gray-900 transition-colors">↗</span>
+            </a>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-950 via-gray-900 to-gray-700 mb-5 leading-[1.1]">
+            WanaGo New Tab
+        </h1>
+
+        <!-- Tagline: ประโยคเดียวที่บอกว่าส่วนขยายช่วยอะไร อ่านจบในครึ่งวินาที -->
+        <p class="text-xl font-semibold text-gray-800 tracking-tight leading-relaxed mb-4">
+            下一站去哪？打開新分頁就知道。
+        </p>
+
+        <!-- Subtitle -->
+        <p class="text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-10 font-normal leading-relaxed tracking-normal">
+            每開一個新分頁，就有一張令人驚豔的 Full HD 旅遊桌布，精選自 50 個國家和地區超過 1,000 處壯麗風景與地標，還能即時搜尋機票與飯店 &mdash; 現已支援 52 種語言。
+        </p>
+
+        <!-- Action Buttons with Authentic Browser Icons (Added ID here) -->
+        <div id="download-section" class="flex items-center justify-center gap-3.5 flex-wrap mb-5 scroll-mt-10">
+            <!-- Chrome -->
+            <a href="https://chromewebstore.google.com/detail/bgaeojjcodgaioepdilnejpegpehfgcg?hl=zh-TW" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#1d1d1f] hover:bg-black text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
+                <span>取得 Chrome 版</span>
+            </a>
+
+            <!-- Edge -->
+            <a href="https://microsoftedge.microsoft.com/addons/detail/kgidbfmjmkjcoilafhfdpgggjioiaamo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#0078d4] hover:bg-[#006cc1] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,120,212,0.3)] hover:shadow-[0_6px_20px_rgba(0,120,212,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_edge/microsoft_edge-icon.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
+                <span>取得 Edge 版</span>
+            </a>
+
+            <!-- Firefox -->
+            <a href="https://addons.mozilla.org/firefox/addon/wanago-new-tab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#c2410c] hover:bg-[#9a3412] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(234,88,12,0.3)] hover:shadow-[0_6px_20px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
+                <span>取得 Firefox 版</span>
+            </a>
+        </div>
+
+        <p class="text-xs text-gray-600 font-medium tracking-wide">✨ 所有功能 100% 免費</p>
+    </header>
+
+    <main id="main">
+
+    <!-- Screenshot Showcase Slider (Placed Before Features, 16:9 Aspect Ratio) -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <div class="relative group bg-gray-900 rounded-2xl md:rounded-3xl p-2 md:p-3.5 shadow-2xl border border-gray-200/80">
+            <!-- 16:9 Aspect Ratio Box with Clean Rounded Corners -->
+            <div class="relative w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden bg-gray-950">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-100" src="/wanago-travel-wallpaper-mount-fuji-preview.webp" alt="WanaGo New Tab - 日本富士山旅遊桌布預覽" fetchpriority="high" decoding="async" width="1600" height="900">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-eiffel-tower-preview.webp" alt="WanaGo New Tab - 巴黎艾菲爾鐵塔旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-times-square-preview.webp" alt="WanaGo New Tab - 紐約時代廣場旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-colosseum-rome-preview.webp" alt="WanaGo New Tab - 羅馬競技場旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-taj-mahal-preview.webp" alt="WanaGo New Tab - 印度泰姬瑪哈陵旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-burj-khalifa-preview.webp" alt="WanaGo New Tab - 杜拜哈里發塔旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-maya-bay-preview.webp" alt="WanaGo New Tab - 泰國瑪雅灣旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-great-wall-china-preview.webp" alt="WanaGo New Tab - 中國萬里長城旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-sydney-opera-house-preview.webp" alt="WanaGo New Tab - 澳洲雪梨歌劇院旅遊桌布預覽">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-hallstatt-preview.webp" alt="WanaGo New Tab - 奧地利哈爾施塔特旅遊桌布預覽">
+            </div>
+
+            <!-- Left & Right Arrow Buttons -->
+            <button id="prevBtn" type="button" aria-label="上一張截圖" class="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="nextBtn" type="button" aria-label="下一張截圖" class="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Dots Indicator -->
+            <div id="indicators" class="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 flex items-center"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-gray-200">
+        <h2 class="text-3xl font-bold text-center mb-12 tracking-tight">功能特色</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🌍</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">探索 50 個國家和地區</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">超過 1,000 張令人屏息的旅遊桌布，從繁華城市到自然美景，隨機選自 50 個國家和地區。還能依類別、洲別或國家輕鬆篩選。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🗣️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">說你的語言</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">WanaGo 支援 52 種語言，會自動跟隨瀏覽器語言，也可隨時在設定中切換。地點與國家名稱也會以你的語言顯示。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🧳</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">輕鬆規劃旅程</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">透過 Expedia 與 Trip.com，即時搜尋並比較每個目的地附近的機票與飯店優惠。還能直接在主頁上自訂預設旅客人數與提前預訂天數。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🔍</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">圖像搜尋 &amp; AI</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">搜尋 1,000 多個目的地，照片即時預覽。可用英文，或泰文、日文、阿拉伯文、印地文等另外 22 種語言輸入，還能一鍵使用 Google 搜尋（文字／語音）與 Gemini AI。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⚡</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">秒開 &amp; 離線可用</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">下一張桌布會事先準備好，開新分頁或隨機切換都能瞬間顯示。最近的桌布離線也能使用，主伺服器速度變慢時，會自動改用備援圖片伺服器。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">✅</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">簡單待辦清單</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">內建直覺好用的任務管理與檢查清單，打造簡潔、不受干擾的日常工作流程，讓你保持專注。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⭐</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">互動式書籤</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">收藏喜愛的旅遊景點，打造專屬的旅行願望清單，隨時拖放調整順序。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🌐</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">自訂世界時鐘</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">可切換 12 小時／24 小時制（或關閉），輕鬆查看你的當地時間或目前目的地的時區。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🗺️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">快速探索</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">點擊地圖圖釘，立即在 Google Maps 上查看地點資訊、知名地標與路線。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⌨️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">空白鍵快捷鍵</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">隨時按下「空白鍵」，立即隨機換上一張全新的絕美旅遊桌布。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⚙️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">打造專屬風格</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">透過 Glassmorphism 風格的設定打造個人化主頁：目的地篩選、預設預訂選項、極簡小工具開關，以及只輪播收藏景點。</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">📸</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">標註攝影師</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">照片精選自 Unsplash 與 Pixabay。每張桌布都會標註攝影師，並附上原圖連結。</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 max-w-3xl mx-auto border-t border-gray-200">
+        <h2 class="text-3xl font-bold text-center mb-12 tracking-tight">常見問題</h2>
+        <div class="flex flex-col gap-4">
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo 是免費的嗎？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">是的。所有功能都免費 &mdash; 不用註冊帳號、沒有試用期，也沒有付費方案。當有人透過合作夥伴小工具預訂機票或飯店時，WanaGo 會獲得少許佣金，旅客不需支付任何額外費用。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo 會收集我的資料嗎？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">不會。你的書籤、設定和待辦清單都儲存在你自己的裝置上，絕不外傳。WanaGo 只要求 <strong>storage</strong> 權限，不含任何分析或追蹤程式碼。為了在首次安裝時推薦附近的目的地，WanaGo 只會在你的裝置上讀取瀏覽器的時區和語言 &mdash; 不會傳送到任何地方。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo 支援哪些語言？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">WanaGo 提供 52 種語言，會自動跟隨瀏覽器語言，也可隨時在設定中切換。搜尋目的地時，除了英文，也能用泰文、日文、韓文、中文、阿拉伯文、印地文等另外 22 種語言輸入地名。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">桌布照片從哪裡來？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">全部 1,000 多張照片皆來自 Unsplash 與 Pixabay，並採用允許免費使用的授權。每張桌布都會在新分頁角落標註攝影師，並附上原圖連結。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo 可以在 Edge 和 Firefox 上使用嗎？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">可以。WanaGo 已在 Chrome Web Store、Microsoft Edge Add-ons 和 Firefox Add-ons 上架，三個平台的功能完全相同。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">可以選擇要看哪些國家和類別嗎？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">可以。在設定側邊欄中，可依類別（城市、文化、自然）、洲別或特定國家和地區篩選，也可以只輪播你收藏的目的地。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">透過預訂連結需要額外付費嗎？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">不需要。連結會以一般公開價格開啟 Expedia 或 Trip.com。若你完成預訂，我們可能會從旅遊網站獲得少許佣金，但絕不影響你支付的金額。</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">如何解除安裝 WanaGo？</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">在瀏覽器工具列的 WanaGo 圖示上按右鍵，選擇<strong>移除</strong>；或開啟瀏覽器的擴充功能頁面，找到 WanaGo 後選擇<strong>移除</strong>。新分頁會立即恢復為預設畫面。</div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-white py-16 px-6 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-normal mb-8 tracking-tight text-gray-700 leading-relaxed">激發旅行靈感、提升工作效率，今天就開始規劃你的下一趟夢想旅程！</h3>
+            <a href="#download-section" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md hover:scale-105 transform duration-150">取得 WanaGo New Tab</a>
+        </div>
+    </section>
+
+    <!-- Legal & Support Section -->
+    <section class="bg-gray-50 py-24 px-6 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Legal Boxes (Left & Right) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Privacy-First & Secure Box -->
+                <div class="bg-white p-8 rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-gray-100 text-center flex flex-col h-full hover:shadow-md transition-shadow duration-300">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4 tracking-tight">隱私優先 &amp; 安全可靠</h2>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base flex-grow">
+                        載入快速、輕巧、可離線使用，完全不拖慢瀏覽器。你的書籤、自訂設定和待辦清單 100% 儲存在你自己的裝置上，不收集任何個人資料。
+                    </p>
+                </div>
+
+                <!-- Affiliate Disclosure Box -->
+                <div class="bg-white p-8 rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-gray-100 text-center flex flex-col h-full hover:shadow-md transition-shadow duration-300">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4 tracking-tight">聯盟行銷聲明</h2>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base flex-grow">
+                        本擴充功能包含聯盟行銷連結。若你透過我們的合作夥伴小工具預訂住宿或機票，我們可能會獲得少許佣金，你不需支付任何額外費用。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="w-12 h-px bg-gray-300 mx-auto mb-16"></div>
+
+            <!-- Contact & Support (Original Style) -->
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 tracking-tight">聯絡 &amp; 支援</h2>
+                <p class="text-gray-500 text-lg mb-4">需要協助、發現錯誤，或有任何建議嗎？歡迎與我們聯絡：</p>
+                <a href="mailto:ittikorn.longtee@gmail.com" class="text-blue-600 text-lg font-medium hover:underline">ittikorn.longtee@gmail.com</a>
+            </div>
+
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-10 text-center text-sm border-t border-gray-100">
+        <nav aria-label="語言" class="flex items-center justify-center gap-3.5 flex-wrap mb-5 px-6">
+            <a href="/" hreflang="en" lang="en" class="hover:underline">English</a>
+            <a href="/es/" hreflang="es" lang="es" class="hover:underline">Español</a>
+            <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" class="hover:underline">Português</a>
+            <a href="/fr/" hreflang="fr" lang="fr" class="hover:underline">Français</a>
+            <a href="/de/" hreflang="de" lang="de" class="hover:underline">Deutsch</a>
+            <a href="/it/" hreflang="it" lang="it" class="hover:underline">Italiano</a>
+            <a href="/tr/" hreflang="tr" lang="tr" class="hover:underline">Türkçe</a>
+            <a href="/id/" hreflang="id" lang="id" class="hover:underline">Bahasa Indonesia</a>
+            <a href="/vi/" hreflang="vi" lang="vi" class="hover:underline">Tiếng Việt</a>
+            <a href="/th/" hreflang="th" lang="th" class="hover:underline">ไทย</a>
+            <a href="/ja/" hreflang="ja" lang="ja" class="hover:underline">日本語</a>
+            <a href="/ko/" hreflang="ko" lang="ko" class="hover:underline">한국어</a>
+            <span class="font-semibold text-gray-900" aria-current="page">繁體中文</span>
+        </nav>
+        <p>&copy; 2026 WanaGo New Tab. 版權所有。</p>
+    </footer>
+
+    <!-- Screenshot Slider Script -->
+    <script>
+        const slides = document.querySelectorAll('.screenshot-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicatorsContainer = document.getElementById('indicators');
+        let currentIndex = 0;
+        let slideInterval;
+
+        // Build dots
+        // พื้นที่แตะต้องกว้างอย่างน้อย 44px ตามเกณฑ์ accessibility
+        // จึงทำปุ่มโปร่งใส 44x44 แล้ววาดจุดจริงเป็น <span> ข้างใน หน้าตาเหมือนเดิม
+        slides.forEach((_, idx) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.setAttribute('aria-label', "前往第 {n} 張投影片".replace('{n}', idx + 1));
+            dot.className = 'w-11 h-11 flex items-center justify-center shrink-0';
+
+            const mark = document.createElement('span');
+            mark.className = `block h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40 w-2.5'}`;
+            dot.appendChild(mark);
+
+            dot.addEventListener('click', () => {
+                goToSlide(idx);
+                resetTimer();
+            });
+            indicatorsContainer.appendChild(dot);
+        });
+
+        const dots = indicatorsContainer.querySelectorAll('button span');
+
+        // โหลดรูปตอนจะใช้จริง แทนที่จะโหลดทั้ง 10 รูปพร้อมกันตอนเปิดหน้า
+        function loadSlide(idx) {
+            const img = slides[idx];
+            if (img && img.dataset.src) {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            }
+        }
+
+        function updateSlider() {
+            loadSlide(currentIndex);
+            loadSlide((currentIndex + 1) % slides.length);   // เตรียมรูปถัดไปไว้ล่วงหน้า
+
+            slides.forEach((slide, idx) => {
+                if (idx === currentIndex) {
+                    slide.classList.remove('opacity-0');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0');
+                }
+            });
+
+            dots.forEach((dot, idx) => {
+                if (idx === currentIndex) {
+                    dot.className = 'block w-6 h-2.5 rounded-full bg-white transition-all duration-300';
+                } else {
+                    dot.className = 'block w-2.5 h-2.5 rounded-full bg-white/40 transition-all duration-300';
+                }
+                dot.parentElement.setAttribute('aria-current', idx === currentIndex ? 'true' : 'false');
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        function resetTimer() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetTimer();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetTimer();
+        });
+
+        // Stop the timer while the tab is hidden so it does not run in the background
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                clearInterval(slideInterval);
+            } else {
+                resetTimer();
+            }
+        });
+
+        // Auto-play every 5s
+        slideInterval = setInterval(nextSlide, 5000);
+    </script>
+
+</body>
+</html>

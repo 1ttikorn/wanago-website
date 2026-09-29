@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謝謝您 | WanaGo New Tab</title>
+    <!-- หน้าขอบคุณหลังถอนการติดตั้ง ไม่ต้องขึ้นในผลค้นหา -->
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/png" href="/WanaGo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <!-- CSS ทั้งหมดอยู่ในหน้านี้ (เดิมโหลด Tailwind จาก CDN ประมาณ 300KB) -->
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            margin: 0; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between;
+            background: #f9fafb; color: #111827;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+        }
+        ::selection { background: #000; color: #fff; }
+        header { padding: 32px 24px; }
+        main { flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 0 24px 64px; }
+        .wrap { max-width: 42rem; margin: 0 auto; text-align: center; }
+        .emoticon { font-size: 60px; line-height: 1.2; margin-bottom: 20px; user-select: none; }
+        h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; margin: 0 auto 24px; max-width: 36rem; text-wrap: balance; }
+        .lead { font-size: 16px; color: #6b7280; line-height: 1.625; margin: 0 auto 44px; max-width: 32rem; }
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            color: #fff; font-weight: 500; font-size: 14px; text-decoration: none;
+            padding: 12px 24px; border-radius: 9999px;
+            transition: transform .15s, box-shadow .15s, background-color .15s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn img { width: 20px; height: 20px; flex-shrink: 0; }
+        .again { margin-top: 0; }
+        .again h2 { font-size: 14px; font-weight: 600; color: #6b7280; margin: 0 0 8px; text-transform: none; }
+        .slogan { font-size: 20px; font-weight: 600; letter-spacing: -0.025em; color: #1f2937; margin: 0 0 24px; line-height: 1.5; text-wrap: balance; }
+        .stores { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+        .btn-chrome { background: #1d1d1f; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+        .btn-chrome:hover { background: #000; }
+        .btn-edge { background: #0078d4; box-shadow: 0 4px 14px rgba(0,120,212,.3); }
+        .btn-edge:hover { background: #006cc1; }
+        .btn-firefox { background: #c2410c; box-shadow: 0 4px 14px rgba(234,88,12,.3); }
+        .btn-firefox:hover { background: #9a3412; }
+        footer { padding: 32px 16px; text-align: center; color: #9ca3af; font-size: 12px; letter-spacing: .025em; border-top: 1px solid #f3f4f6; background: rgba(255,255,255,.5); }
+        footer p { margin: 0; }
+        @media (min-width: 768px) {
+            .emoticon { font-size: 72px; }
+            h1 { font-size: 48px; }
+            .lead { font-size: 20px; }
+            .btn { font-size: 16px; }
+            footer { font-size: 14px; }
+        }
+        @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="wrap">
+
+            <div class="emoticon" aria-hidden="true">(ㅅ´ ˘ `)</div>
+
+            <h1>謝謝您與我們一起旅行。</h1>
+
+            <p class="lead">很遺憾看到您離開，但我們由衷感謝您與 WanaGo 共度的時光。祝您靈感源源不絕，旅途精彩無限。</p>
+
+            <!-- ติดตั้งกลับ: เผื่อถอนโดยไม่ตั้งใจ หรือกำลังย้ายเบราว์เซอร์ -->
+            <section class="again" aria-labelledby="again-title">
+                <h2 id="again-title">改變心意了嗎？</h2>
+                <p class="slogan">下一站去哪？打開新分頁就知道。</p>
+                <div class="stores" id="stores">
+                    <a data-browser="chrome" class="btn btn-chrome" href="https://chromewebstore.google.com/detail/bgaeojjcodgaioepdilnejpegpehfgcg?hl=zh-TW" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async">
+                        <span>取得 Chrome 版</span>
+                    </a>
+                    <a data-browser="edge" class="btn btn-edge" href="https://microsoftedge.microsoft.com/addons/detail/kgidbfmjmkjcoilafhfdpgggjioiaamo" target="_blank" rel="noopener noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/microsoft_edge/microsoft_edge-icon.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async">
+                        <span>取得 Edge 版</span>
+                    </a>
+                    <a data-browser="firefox" class="btn btn-firefox" href="https://addons.mozilla.org/firefox/addon/wanago-new-tab/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" alt="" aria-hidden="true" width="20" height="20" loading="lazy" decoding="async">
+                        <span>取得 Firefox 版</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WanaGo New Tab. 版權所有。</p>
+    </footer>
+
+    <!-- ย้ายปุ่มของเบราว์เซอร์ที่ผู้ใช้ใช้อยู่ขึ้นก่อน -->
+    <script>
+        (function () {
+            var ua = navigator.userAgent;
+            var current = /Edg\//.test(ua) ? 'edge' : /Firefox\//.test(ua) ? 'firefox' : /Chrome\//.test(ua) ? 'chrome' : '';
+            var box = document.getElementById('stores');
+            var btn = current && box.querySelector('[data-browser="' + current + '"]');
+            if (btn) box.insertBefore(btn, box.firstChild);
+        })();
+    </script>
+
+</body>
+</html>
