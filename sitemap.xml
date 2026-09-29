@@ -1,9 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.wanagonewtab.com/</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/pt-br/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/id/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/th/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
+  </url>
+  <url>
+    <loc>https://www.wanagonewtab.com/zh-tw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/"/>
   </url>
 </urlset>
