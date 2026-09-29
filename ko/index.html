@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanaGo | 여행 배경화면 새 탭 &amp; 항공권·호텔 검색</title>
+    <link rel="icon" type="image/png" href="/WanaGo-icon.png">
+    <meta name="description" content="새 탭을 50개 국가·지역의 HD 여행 배경화면 1,000장 이상으로! 52개 언어 지원, 무료 항공권·호텔 검색, 할 일 목록, 북마크.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.wanagonewtab.com/ko/">
+    <link rel="alternate" hreflang="en" href="https://www.wanagonewtab.com/">
+    <link rel="alternate" hreflang="es" href="https://www.wanagonewtab.com/es/">
+    <link rel="alternate" hreflang="pt-BR" href="https://www.wanagonewtab.com/pt-br/">
+    <link rel="alternate" hreflang="pt" href="https://www.wanagonewtab.com/pt-br/">
+    <link rel="alternate" hreflang="fr" href="https://www.wanagonewtab.com/fr/">
+    <link rel="alternate" hreflang="de" href="https://www.wanagonewtab.com/de/">
+    <link rel="alternate" hreflang="it" href="https://www.wanagonewtab.com/it/">
+    <link rel="alternate" hreflang="tr" href="https://www.wanagonewtab.com/tr/">
+    <link rel="alternate" hreflang="id" href="https://www.wanagonewtab.com/id/">
+    <link rel="alternate" hreflang="vi" href="https://www.wanagonewtab.com/vi/">
+    <link rel="alternate" hreflang="th" href="https://www.wanagonewtab.com/th/">
+    <link rel="alternate" hreflang="ja" href="https://www.wanagonewtab.com/ja/">
+    <link rel="alternate" hreflang="ko" href="https://www.wanagonewtab.com/ko/">
+    <link rel="alternate" hreflang="zh-TW" href="https://www.wanagonewtab.com/zh-tw/">
+    <link rel="alternate" hreflang="zh-HK" href="https://www.wanagonewtab.com/zh-tw/">
+    <link rel="alternate" hreflang="x-default" href="https://www.wanagonewtab.com/">
+
+    <!-- โลโก้คือ LCP element ของหน้านี้ จึงสั่งโหลดตั้งแต่อ่าน head -->
+    <link rel="preload" as="image" href="/WanaGo-Travel-Wallpaper-NewTab-Logo.webp" fetchpriority="high">
+
+    <!-- Fonts: preconnect first, then a normal stylesheet link.
+         @import inside <style> blocks rendering and loads later than this. -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.vectorlogo.zone" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wanagonewtab.com/ko/">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="id_ID">
+    <meta property="og:locale:alternate" content="vi_VN">
+    <meta property="og:locale:alternate" content="th_TH">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:title" content="WanaGo | 여행 배경화면 새 탭 &amp; 항공권·호텔 검색">
+    <meta property="og:description" content="새 탭을 50개 국가·지역의 HD 여행 배경화면 1,000장 이상으로 바꿔 보세요. 52개 언어 지원에 항공권·호텔 검색까지 바로.">
+    <meta property="og:image" content="https://www.wanagonewtab.com/wanago-travel-wallpaper-mount-fuji-preview.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WanaGo | 여행 배경화면 새 탭 &amp; 항공권·호텔 검색">
+    <meta name="twitter:description" content="새 탭을 50개 국가·지역의 HD 여행 배경화면 1,000장 이상으로 바꿔 보세요. 52개 언어 지원에 항공권·호텔 검색까지 바로.">
+    <meta name="twitter:image" content="https://www.wanagonewtab.com/wanago-travel-wallpaper-mount-fuji-preview.webp">
+
+    <!-- Structured data: lets Google show category and price in search results -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "WanaGo | Travel Wallpaper New Tab",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Chrome, Microsoft Edge, Firefox",
+  "url": "https://www.wanagonewtab.com/ko/",
+  "image": "https://www.wanagonewtab.com/wanago-travel-wallpaper-mount-fuji-preview.webp",
+  "description": "새 탭을 50개 국가 및 지역의 HD 여행 배경화면 1,000장 이상으로 바꿔 보세요. 52개 언어 지원, 항공권·호텔 즉시 검색, 할 일 목록, 북마크, 세계 시계까지.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Ittikorn Longtee"
+  },
+  "inLanguage": "ko"
+}
+    </script>
+
+    <!-- FAQ schema: Google อาจแสดงคำถามคำตอบใต้ผลค้นหา ทำให้กินพื้นที่มากขึ้น -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "WanaGo는 무료인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 모든 기능이 무료입니다 — 계정도, 체험 기간도, 유료 요금제도 없습니다. 제휴 위젯을 통해 항공권이나 호텔을 예약하면 WanaGo가 소정의 수수료를 받지만, 여행자가 추가로 부담하는 비용은 없습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo는 내 데이터를 수집하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. 북마크, 설정, 할 일 목록은 내 기기에만 저장되며 외부로 전송되지 않습니다. WanaGo는 storage 권한만 요청하며, 분석이나 추적 스크립트가 전혀 없습니다. 처음 설치할 때 가까운 여행지를 추천하기 위해 브라우저의 시간대와 언어를 기기 안에서만 읽으며 — 어디에도 전송하지 않습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo는 어떤 언어를 지원하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WanaGo는 52개 언어로 제공됩니다. 브라우저 언어에 자동으로 맞춰지며, 설정에서 언제든 바꿀 수 있습니다. 또한 영어는 물론 태국어, 일본어, 한국어, 중국어, 아랍어, 힌디어 등 22개 언어로도 장소 이름을 입력해 여행지를 검색할 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "배경화면 사진은 어디에서 가져오나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1,000장이 넘는 사진은 모두 무료 사용이 허용된 라이선스로 Unsplash와 Pixabay에서 가져왔습니다. 모든 배경화면은 새 탭 모서리에 사진작가 이름과 원본 링크를 표시합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo는 Edge와 Firefox에서도 작동하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. WanaGo는 Chrome Web Store, Microsoft Edge Add-ons, Firefox Add-ons에 등록되어 있으며, 세 곳 모두 동일한 기능을 제공합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "보고 싶은 국가와 카테고리를 고를 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 설정 사이드바에서 카테고리(도시, 문화, 자연), 대륙, 또는 특정 국가 및 지역별로 필터링할 수 있습니다. 북마크한 여행지만 돌아가며 보는 것도 가능합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "예약 링크를 이용하면 추가 비용이 드나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. 링크를 누르면 Expedia 또는 Trip.com이 일반 공개 가격 그대로 열립니다. 예약하시면 저희가 여행 사이트로부터 소정의 수수료를 받을 수 있지만, 결제 금액은 전혀 달라지지 않습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "WanaGo는 어떻게 삭제하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "브라우저 툴바에서 WanaGo 아이콘을 마우스 오른쪽 버튼으로 클릭한 뒤 삭제를 선택하거나, 브라우저의 확장 프로그램 페이지에서 WanaGo를 찾아 삭제를 선택하세요. 새 탭이 즉시 기본 상태로 돌아갑니다."
+      }
+    }
+  ]
+}
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased selection:bg-black selection:text-white">
+
+    <!-- ลิงก์ข้ามไปเนื้อหาหลัก: มองไม่เห็นด้วยตา แต่ผู้ใช้คีย์บอร์ดกด Tab แล้วจะเจอเป็นอันดับแรก -->
+    <a href="#main" class="sr-only focus:not-sr-only">본문 바로가기</a>
+
+    <!-- Hero Section (Refined Apple Aesthetic) -->
+    <header class="text-center pt-24 pb-16 px-6 max-w-4xl mx-auto flex flex-col items-center">
+
+        <!-- Logo -->
+        <div class="mb-7">
+            <img src="/WanaGo-Travel-Wallpaper-NewTab-Logo.webp" alt="WanaGo 로고" width="112" height="112" fetchpriority="high" decoding="async" class="w-24 h-24 md:w-28 md:h-28 object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.12)] transition-transform duration-300 hover:scale-105">
+        </div>
+
+        <!-- Product of the Day Badge -->
+        <div class="mb-6">
+            <a href="https://saashunt.best/projects/wanago-travel-wallpaper-new-tab" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 bg-white/80 hover:bg-white text-gray-800 px-4 py-1.5 rounded-full font-medium text-xs md:text-sm border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] backdrop-blur-md transition-all duration-200 hover:shadow-md">
+                <span>🏆 SaaSHunt 오늘의 제품 1위!</span>
+                <span class="text-gray-600 group-hover:text-gray-900 transition-colors">↗</span>
+            </a>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-gray-950 via-gray-900 to-gray-700 mb-5 leading-[1.1]">
+            WanaGo New Tab
+        </h1>
+
+        <!-- Tagline: ประโยคเดียวที่บอกว่าส่วนขยายช่วยอะไร อ่านจบในครึ่งวินาที -->
+        <p class="text-xl font-semibold text-gray-800 tracking-tight leading-relaxed mb-4">
+            다음 여행지가 고민될 땐? 새 탭을 열어 보세요.
+        </p>
+
+        <!-- Subtitle -->
+        <p class="text-base md:text-lg text-gray-500 max-w-2xl mx-auto mb-10 font-normal leading-relaxed tracking-normal">
+            새 탭을 열 때마다 50개 국가 및 지역의 절경과 랜드마크 1,000곳 이상을 담은 풀HD 여행 배경화면이 펼쳐집니다. 항공권·호텔 검색도 바로 &mdash; 이제 52개 언어로 만나 보세요.
+        </p>
+
+        <!-- Action Buttons with Authentic Browser Icons (Added ID here) -->
+        <div id="download-section" class="flex items-center justify-center gap-3.5 flex-wrap mb-5 scroll-mt-10">
+            <!-- Chrome -->
+            <a href="https://chromewebstore.google.com/detail/bgaeojjcodgaioepdilnejpegpehfgcg?hl=ko" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#1d1d1f] hover:bg-black text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
+                <span>Chrome용 받기</span>
+            </a>
+
+            <!-- Edge -->
+            <a href="https://microsoftedge.microsoft.com/addons/detail/kgidbfmjmkjcoilafhfdpgggjioiaamo" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#0078d4] hover:bg-[#006cc1] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(0,120,212,0.3)] hover:shadow-[0_6px_20px_rgba(0,120,212,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_edge/microsoft_edge-icon.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
+                <span>Edge용 받기</span>
+            </a>
+
+            <!-- Firefox -->
+            <a href="https://addons.mozilla.org/firefox/addon/wanago-new-tab/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 bg-[#c2410c] hover:bg-[#9a3412] text-white font-medium py-3 px-6 rounded-full transition shadow-[0_4px_14px_rgba(234,88,12,0.3)] hover:shadow-[0_6px_20px_rgba(234,88,12,0.4)] hover:-translate-y-0.5 transform duration-150 text-sm md:text-base">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="20" height="20" class="w-5 h-5 shrink-0">
+                <span>Firefox용 받기</span>
+            </a>
+        </div>
+
+        <p class="text-xs text-gray-600 font-medium tracking-wide">✨ 모든 기능 100% 무료</p>
+    </header>
+
+    <main id="main">
+
+    <!-- Screenshot Showcase Slider (Placed Before Features, 16:9 Aspect Ratio) -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <div class="relative group bg-gray-900 rounded-2xl md:rounded-3xl p-2 md:p-3.5 shadow-2xl border border-gray-200/80">
+            <!-- 16:9 Aspect Ratio Box with Clean Rounded Corners -->
+            <div class="relative w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden bg-gray-950">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-100" src="/wanago-travel-wallpaper-mount-fuji-preview.webp" alt="WanaGo New Tab - 일본 후지산 여행 배경화면 미리보기" fetchpriority="high" decoding="async" width="1600" height="900">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-eiffel-tower-preview.webp" alt="WanaGo New Tab - 파리 에펠탑 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-times-square-preview.webp" alt="WanaGo New Tab - 뉴욕 타임스스퀘어 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-colosseum-rome-preview.webp" alt="WanaGo New Tab - 로마 콜로세움 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-taj-mahal-preview.webp" alt="WanaGo New Tab - 인도 타지마할 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-burj-khalifa-preview.webp" alt="WanaGo New Tab - 두바이 부르즈 할리파 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-maya-bay-preview.webp" alt="WanaGo New Tab - 태국 마야 베이 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-great-wall-china-preview.webp" alt="WanaGo New Tab - 중국 만리장성 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-sydney-opera-house-preview.webp" alt="WanaGo New Tab - 호주 시드니 오페라 하우스 여행 배경화면 미리보기">
+                <img class="screenshot-slide absolute inset-0 w-full h-full object-cover opacity-0" data-src="/wanago-travel-wallpaper-hallstatt-preview.webp" alt="WanaGo New Tab - 오스트리아 할슈타트 여행 배경화면 미리보기">
+            </div>
+
+            <!-- Left & Right Arrow Buttons -->
+            <button id="prevBtn" type="button" aria-label="이전 스크린샷" class="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="nextBtn" type="button" aria-label="다음 스크린샷" class="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md flex items-center justify-center text-white border border-white/20 transition duration-200 shadow-md">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Dots Indicator -->
+            <div id="indicators" class="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 flex items-center"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto border-t border-gray-200">
+        <h2 class="text-3xl font-bold text-center mb-12 tracking-tight">주요 기능</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🌍</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">50개 국가 및 지역 탐험</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">활기찬 도시부터 아름다운 자연까지, 50개 국가 및 지역에서 무작위로 골라 낸 1,000장 이상의 멋진 여행 배경화면. 카테고리, 대륙, 국가별로 손쉽게 필터링할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🗣️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">내 언어로 편하게</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">WanaGo는 52개 언어를 지원합니다. 브라우저 언어에 자동으로 맞춰지며, 설정에서 언제든 바꿀 수 있습니다. 장소와 국가 이름도 내 언어로 표시됩니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🧳</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">간편한 여행 계획</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">여행지 주변의 항공권과 호텔 특가를 Expedia와 Trip.com에서 바로 검색하고 비교하세요. 기본 인원 수와 예약 시점도 대시보드에서 직접 설정할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🔍</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">비주얼 검색 &amp; AI</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">1,000곳 이상의 여행지를 사진 미리보기와 함께 바로 찾아보세요. 영어는 물론 태국어, 일본어, 아랍어, 힌디어 등 22개 언어로도 입력할 수 있고, Google 검색(텍스트/음성)과 Gemini AI도 클릭 한 번으로 이용할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⚡</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">빠른 속도 &amp; 오프라인 지원</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">다음 배경화면을 미리 준비해 두기 때문에 새 탭과 셔플이 즉시 표시됩니다. 최근 배경화면은 오프라인에서도 볼 수 있고, 기본 서버가 느리면 백업 이미지 서버로 자동 전환됩니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">✅</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">간단한 할 일 목록</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">직관적인 할 일 관리 및 체크리스트 기능이 내장되어 있어, 방해 요소 없이 깔끔하게 하루 일과에 집중할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⭐</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">인터랙티브 북마크</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">좋아하는 여행지를 저장해 나만의 여행 버킷 리스트를 만들고, 드래그 앤 드롭으로 언제든 순서를 바꿔 보세요.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🌐</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">맞춤형 세계 시계</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">12시간/24시간 형식을 전환하거나 끌 수 있으며, 현재 위치의 시간이나 표시 중인 여행지의 시간대를 간편하게 확인할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">🗺️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">빠른 탐색</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">지도 핀을 클릭하면 위치 정보, 유명 랜드마크, 경로를 Google Maps에서 바로 확인할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⌨️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">스페이스바 단축키</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">언제든 스페이스바를 누르면 새로운 멋진 여행 배경화면으로 즉시 바뀝니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">⚙️</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">나만의 스타일로</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Glassmorphism 스타일 설정으로 대시보드를 꾸며 보세요. 여행지 필터, 기본 예약 옵션, 미니멀 위젯 켜기/끄기, 즐겨찾기만 반복 보기까지 가능합니다.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
+                <div class="text-3xl mb-4">📸</div>
+                <h3 class="text-lg font-semibold mb-2 tracking-tight">사진작가 출처 표기</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Unsplash와 Pixabay에서 엄선한 사진을 사용합니다. 모든 배경화면에 사진작가 이름과 원본 링크를 표기합니다.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 max-w-3xl mx-auto border-t border-gray-200">
+        <h2 class="text-3xl font-bold text-center mb-12 tracking-tight">자주 묻는 질문</h2>
+        <div class="flex flex-col gap-4">
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo는 무료인가요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">네. 모든 기능이 무료입니다 &mdash; 계정도, 체험 기간도, 유료 요금제도 없습니다. 제휴 위젯을 통해 항공권이나 호텔을 예약하면 WanaGo가 소정의 수수료를 받지만, 여행자가 추가로 부담하는 비용은 없습니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo는 내 데이터를 수집하나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">아니요. 북마크, 설정, 할 일 목록은 내 기기에만 저장되며 외부로 전송되지 않습니다. WanaGo는 <strong>storage</strong> 권한만 요청하며, 분석이나 추적 스크립트가 전혀 없습니다. 처음 설치할 때 가까운 여행지를 추천하기 위해 브라우저의 시간대와 언어를 기기 안에서만 읽으며 &mdash; 어디에도 전송하지 않습니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo는 어떤 언어를 지원하나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">WanaGo는 52개 언어로 제공됩니다. 브라우저 언어에 자동으로 맞춰지며, 설정에서 언제든 바꿀 수 있습니다. 또한 영어는 물론 태국어, 일본어, 한국어, 중국어, 아랍어, 힌디어 등 22개 언어로도 장소 이름을 입력해 여행지를 검색할 수 있습니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">배경화면 사진은 어디에서 가져오나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">1,000장이 넘는 사진은 모두 무료 사용이 허용된 라이선스로 Unsplash와 Pixabay에서 가져왔습니다. 모든 배경화면은 새 탭 모서리에 사진작가 이름과 원본 링크를 표시합니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo는 Edge와 Firefox에서도 작동하나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">네. WanaGo는 Chrome Web Store, Microsoft Edge Add-ons, Firefox Add-ons에 등록되어 있으며, 세 곳 모두 동일한 기능을 제공합니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">보고 싶은 국가와 카테고리를 고를 수 있나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">네. 설정 사이드바에서 카테고리(도시, 문화, 자연), 대륙, 또는 특정 국가 및 지역별로 필터링할 수 있습니다. 북마크한 여행지만 돌아가며 보는 것도 가능합니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">예약 링크를 이용하면 추가 비용이 드나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">아니요. 링크를 누르면 Expedia 또는 Trip.com이 일반 공개 가격 그대로 열립니다. 예약하시면 저희가 여행 사이트로부터 소정의 수수료를 받을 수 있지만, 결제 금액은 전혀 달라지지 않습니다.</div>
+            </details>
+
+            <details class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm">
+                <summary class="faq-q px-6 py-5 text-base md:text-lg font-semibold tracking-tight">WanaGo는 어떻게 삭제하나요?</summary>
+                <div class="px-6 pb-5 text-gray-500 text-sm md:text-base leading-relaxed">브라우저 툴바에서 WanaGo 아이콘을 마우스 오른쪽 버튼으로 클릭한 뒤 <strong>삭제</strong>를 선택하거나, 브라우저의 확장 프로그램 페이지에서 WanaGo를 찾아 <strong>삭제</strong>를 선택하세요. 새 탭이 즉시 기본 상태로 돌아갑니다.</div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-white py-16 px-6 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-normal mb-8 tracking-tight text-gray-700 leading-relaxed">영감을 얻고, 생산성을 높이고, 꿈꾸던 다음 여행 계획을 오늘 바로 시작하세요!</h3>
+            <a href="#download-section" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full transition shadow-md hover:scale-105 transform duration-150">WanaGo New Tab 받기</a>
+        </div>
+    </section>
+
+    <!-- Legal & Support Section -->
+    <section class="bg-gray-50 py-24 px-6 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Legal Boxes (Left & Right) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Privacy-First & Secure Box -->
+                <div class="bg-white p-8 rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-gray-100 text-center flex flex-col h-full hover:shadow-md transition-shadow duration-300">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4 tracking-tight">개인정보 보호 우선 &amp; 안전</h2>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base flex-grow">
+                        빠른 로딩, 가벼운 용량, 오프라인 지원으로 브라우저 속도 저하가 전혀 없습니다. 북마크, 맞춤 설정, 할 일 목록은 100% 내 기기에만 저장됩니다. 개인 데이터는 수집하지 않습니다.
+                    </p>
+                </div>
+
+                <!-- Affiliate Disclosure Box -->
+                <div class="bg-white p-8 rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-gray-100 text-center flex flex-col h-full hover:shadow-md transition-shadow duration-300">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4 tracking-tight">제휴 링크 고지</h2>
+                    <p class="text-gray-500 leading-relaxed text-sm md:text-base flex-grow">
+                        이 확장 프로그램에는 제휴 링크가 포함되어 있습니다. 제휴 위젯을 통해 숙소나 항공권을 예약하시면 저희가 소정의 수수료를 받을 수 있으며, 추가 비용은 발생하지 않습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="w-12 h-px bg-gray-300 mx-auto mb-16"></div>
+
+            <!-- Contact & Support (Original Style) -->
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4 tracking-tight">문의 &amp; 지원</h2>
+                <p class="text-gray-500 text-lg mb-4">도움이 필요하시거나, 버그를 발견하셨거나, 제안하실 내용이 있으신가요? 아래 주소로 연락해 주세요:</p>
+                <a href="mailto:ittikorn.longtee@gmail.com" class="text-blue-600 text-lg font-medium hover:underline">ittikorn.longtee@gmail.com</a>
+            </div>
+
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-10 text-center text-sm border-t border-gray-100">
+        <nav aria-label="언어" class="flex items-center justify-center gap-3.5 flex-wrap mb-5 px-6">
+            <a href="/" hreflang="en" lang="en" class="hover:underline">English</a>
+            <a href="/es/" hreflang="es" lang="es" class="hover:underline">Español</a>
+            <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR" class="hover:underline">Português</a>
+            <a href="/fr/" hreflang="fr" lang="fr" class="hover:underline">Français</a>
+            <a href="/de/" hreflang="de" lang="de" class="hover:underline">Deutsch</a>
+            <a href="/it/" hreflang="it" lang="it" class="hover:underline">Italiano</a>
+            <a href="/tr/" hreflang="tr" lang="tr" class="hover:underline">Türkçe</a>
+            <a href="/id/" hreflang="id" lang="id" class="hover:underline">Bahasa Indonesia</a>
+            <a href="/vi/" hreflang="vi" lang="vi" class="hover:underline">Tiếng Việt</a>
+            <a href="/th/" hreflang="th" lang="th" class="hover:underline">ไทย</a>
+            <a href="/ja/" hreflang="ja" lang="ja" class="hover:underline">日本語</a>
+            <span class="font-semibold text-gray-900" aria-current="page">한국어</span>
+            <a href="/zh-tw/" hreflang="zh-Hant" lang="zh-Hant" class="hover:underline">繁體中文</a>
+        </nav>
+        <p>&copy; 2026 WanaGo New Tab. All rights reserved.</p>
+    </footer>
+
+    <!-- Screenshot Slider Script -->
+    <script>
+        const slides = document.querySelectorAll('.screenshot-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicatorsContainer = document.getElementById('indicators');
+        let currentIndex = 0;
+        let slideInterval;
+
+        // Build dots
+        // พื้นที่แตะต้องกว้างอย่างน้อย 44px ตามเกณฑ์ accessibility
+        // จึงทำปุ่มโปร่งใส 44x44 แล้ววาดจุดจริงเป็น <span> ข้างใน หน้าตาเหมือนเดิม
+        slides.forEach((_, idx) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.setAttribute('aria-label', "{n}번 슬라이드로 이동".replace('{n}', idx + 1));
+            dot.className = 'w-11 h-11 flex items-center justify-center shrink-0';
+
+            const mark = document.createElement('span');
+            mark.className = `block h-2.5 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-white w-6' : 'bg-white/40 w-2.5'}`;
+            dot.appendChild(mark);
+
+            dot.addEventListener('click', () => {
+                goToSlide(idx);
+                resetTimer();
+            });
+            indicatorsContainer.appendChild(dot);
+        });
+
+        const dots = indicatorsContainer.querySelectorAll('button span');
+
+        // โหลดรูปตอนจะใช้จริง แทนที่จะโหลดทั้ง 10 รูปพร้อมกันตอนเปิดหน้า
+        function loadSlide(idx) {
+            const img = slides[idx];
+            if (img && img.dataset.src) {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            }
+        }
+
+        function updateSlider() {
+            loadSlide(currentIndex);
+            loadSlide((currentIndex + 1) % slides.length);   // เตรียมรูปถัดไปไว้ล่วงหน้า
+
+            slides.forEach((slide, idx) => {
+                if (idx === currentIndex) {
+                    slide.classList.remove('opacity-0');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0');
+                }
+            });
+
+            dots.forEach((dot, idx) => {
+                if (idx === currentIndex) {
+                    dot.className = 'block w-6 h-2.5 rounded-full bg-white transition-all duration-300';
+                } else {
+                    dot.className = 'block w-2.5 h-2.5 rounded-full bg-white/40 transition-all duration-300';
+                }
+                dot.parentElement.setAttribute('aria-current', idx === currentIndex ? 'true' : 'false');
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        function resetTimer() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetTimer();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetTimer();
+        });
+
+        // Stop the timer while the tab is hidden so it does not run in the background
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                clearInterval(slideInterval);
+            } else {
+                resetTimer();
+            }
+        });
+
+        // Auto-play every 5s
+        slideInterval = setInterval(nextSlide, 5000);
+    </script>
+
+</body>
+</html>
